@@ -1,12 +1,11 @@
-import { Mock_Projects } from "./MockProjects"
+import { Mock_Projects } from "./MockProjects";
+import ProjectList from "./ProjectList";
 
 function ProjectsPage() {
 	return (
 		<>
 			<h1>Projects</h1>
-			<pre>
-				{JSON.stringify(Mock_Projects,null, '')}
-			</pre>
+			<ProjectList projects={Mock_Projects} />
 		</>
 	)
 }
