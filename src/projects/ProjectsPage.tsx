@@ -1,4 +1,4 @@
-import React, { Fragment, useState} from "react";
+import React, { Fragment, useState } from "react";
 import { Mock_Projects } from "./MockProjects";
 import ProjectList from "./ProjectList";
 import { Project } from "./Project";
@@ -12,11 +12,11 @@ function ProjectsPage() {
 		});
 		setProjects(updatedProjects);
 	};
-	
+
 	return (
 		<Fragment>
 			<h1>Projects</h1>
-			<ProjectList 
+			<ProjectList
 				onSave={saveProject}
 				projects={projects} />
 		</Fragment>
